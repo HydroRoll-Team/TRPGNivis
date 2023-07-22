@@ -1,0 +1,5 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q词法分析器（Lexer）模块*：这个模块的主要任务是将输入的源代码（字符串）转换为一个个的标记（Token）。例如，它可以将字符串 \"list colors = red, blue, green\" 转换为以下的标记序列：[LIST, IDENTIFIER, EQUALS, IDENTIFIER, COMMA, IDENTIFIER, COMMA, IDENTIFIER]。\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q语法分析器（Parser）模块*：这个模块的主要任务是将Lexer模块生成的标记序列转换为一个抽象语法树（AST）。AST是一种树形数据结构，它以一种更接近于编程语言的语法结构来表示源代码。\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q内置类型模块*：这个模块定义了psi语言的内置类型，如列表和字典。它应该提供一些函数，用于创建和操作这些类型的实例。\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q执行环境模块*：这个模块定义了psi语言的执行环境，包括变量的作用域和生命周期等。它应该提供一些函数，用于在执行环境中定义和查找变量。\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q解释器模块*：这个模块的主要任务是遍历AST，并在执行环境中执行相应的操作。\\E$"}

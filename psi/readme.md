@@ -228,7 +228,7 @@ r: 这是一个别名
 
 ***
 
-3. **逻辑运算**：我们可以添加一些命令来进行逻辑运算，例如 `and`, `or`, `not` 等。例如：`? x > 0 and y > 0: reply: Both numbers are positive`。
+**逻辑运算**：我们可以添加一些命令来进行逻辑运算，例如 `and`, `or`, `not` 等。例如：`? x > 0 and y > 0: reply: Both numbers are positive`。
 
 4. **类型转换**：我们可以添加一些命令来进行类型转换，例如 `toInt`, `toFloat`, `toString` 等。例如：`toInt: "123"`。
 
@@ -240,7 +240,7 @@ r: 这是一个别名
 
 8. **异步操作**：我们可以添加一些命令来进行异步操作，例如 `async`, `await` 等。例如：`async: longRunningTask`。
 
-9. **环境变量**：我们可以添加一些命令来获取和设置环境变量，例如 `getEnv`, `setEnv` 等。例如：`getEnv: "PATH"`。
+9.  **环境变量**：我们可以添加一些命令来获取和设置环境变量，例如 `getEnv`, `setEnv` 等。例如：`getEnv: "PATH"`。
 
 10. **调试工具**：我们可以添加一些命令来进行调试，例如 `log`, `debug`, `trace` 等。例如：`log: "Starting task"`。
 
