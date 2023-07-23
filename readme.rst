@@ -3,6 +3,7 @@ Psi CLI Language
 
 Psi is a new programming language designed with simplicity, flexibility, and performance in mind. It provides a clean and intuitive syntax that is easy to read and write, making it an excellent choice for both beginners and experienced programmers.
 
+
 Features
 --------
 
@@ -30,6 +31,7 @@ Features
 .. _`Interpreter Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/interpreter.py
 .. _`Mathematics Foundation Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/mathematics.py
 .. _`Documentation Module`: https://github.com/HydroRoll-Team/psi/blob/main/docs
+
 
 Getting Started
 ---------------
@@ -62,6 +64,7 @@ To get started with Psi, you can clone the repository and follow the instruction
 | LinkedList          | Enum                | ``loop`` ``break`` ``continue``         |  ``=>``: functional program                 |
 +---------------------+---------------------+-----------------------------------------+---------------------------------------------+
 
+
 Contributing
 ------------
 
@@ -70,9 +73,12 @@ Contributions to the Psi project are welcome. If you have a feature request, bug
 How to build docs
 ^^^^^^^^^^^^^^^^^
     
+::
+
     git clone https://github.com/HydroRoll-Team/psi.git
     cd psi/psi/docs
     sphinx-build -b html . _build/html
+
 
 License
 -------
