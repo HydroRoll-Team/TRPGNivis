@@ -23,7 +23,7 @@ Features
 - `Documentation Module`_: This module uses reStructuredText and Sphinx to build the documentation, providing API interface descriptions and usage examples.
 
 .. _`Lexer Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/lexer.py
-.. _`Parser Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/parser.py
+.. _`Parser Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/parsers.py
 .. _`Built-in Types Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/type.py
 .. _`Error Handling Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/exception.py
 .. _`Execution Environment Module`: https://github.com/HydroRoll-Team/psi/blob/main/psi/execution.py
@@ -66,6 +66,13 @@ Contributing
 ------------
 
 Contributions to the Psi project are welcome. If you have a feature request, bug report, or proposal for improvement, please open an issue on the project's GitHub page. If you wish to contribute code, please fork the repository and submit a pull request.
+
+How to build docs
+^^^^^^^^^^^^^^^^^
+    
+    git clone https://github.com/HydroRoll-Team/psi.git
+    cd psi/psi/docs
+    sphinx-build -b html . _build/html
 
 License
 -------

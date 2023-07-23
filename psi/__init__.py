@@ -4,3 +4,23 @@
 """
 
 __all__ = ['Psi']
+
+from psi.execution import Execution
+
+class Psi:
+    def __init__(self, input):
+        self.input = input
+        self.execution = Execution(input)
+        self.result = None
+
+    def execute(self):
+        self.result = self.execution.execute()
+        return self.result
+
+    def get_result(self):
+        return self.result
+
+    def set_input(self, input):
+        self.input = input
+        self.execution = Execution(input)
+        self.result = None
