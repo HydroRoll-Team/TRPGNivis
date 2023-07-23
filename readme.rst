@@ -36,6 +36,8 @@ Getting Started
 
 To get started with Psi, you can clone the repository and follow the instructions in the README file. The repository includes a comprehensive set of examples that demonstrate the various features of the language.
 
+.. @TODO 完整的Keywords列表
+
 +---------------------+---------------------+-----------------------------------------+---------------------------------------------+
 | *Data Structures*   | *Data Types*        | *keywords*                              | *Special Characters*                        |
 +=====================+=====================+=========================================+=============================================+
