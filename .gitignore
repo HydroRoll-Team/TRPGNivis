@@ -1,2 +1,11 @@
 readme.md
+
+# python
 __pycache__
+
+# LaTeX
+src/main.aux
+src/main.fdb_latexmk
+src/main.fls
+src/main.log
+src/main.synctex.gz
