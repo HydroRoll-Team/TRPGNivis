@@ -1,11 +1,12 @@
 \documentclass[conference]{IEEEtran}
+\usepackage{booktabs}
 
 \begin{document}
 \title{Psi CLI Language}
 \author{\IEEEauthorblockN{HsiangNianian}
-\IEEEauthorblockA{\textit{Department of Computer Science} \\
-\textit{University of RBQ U.}\\
-i@jyunko.cn}}
+    \IEEEauthorblockA{\textit{Department of Computer Science} \\
+        \textit{University of RBQ U.}\\
+        i@jyunko.cn}}
 \maketitle
 
 \begin{abstract}
@@ -20,6 +21,27 @@ This section describes the key features of the Psi CLI language.
 
 \subsection{Lexer Module}
 The lexer module is responsible for converting source code into a sequence of tokens.
+It recognizes the basic elements of the language such as identifiers, keywords, operators, and literals.
+
+\begin{table}[htbp]
+    \caption{Code Tokens and Corresponding Meanings}
+    \label{table:code_tokens}
+    \centering
+    \begin{tabular}{@{} c|c @{}}
+        \toprule
+        \textbf{Token} & \textbf{Meaning} \\
+        \midrule
+        list           & TYPE \\
+        colors         & IDENTIFIER \\
+        =              & EQUALS \\
+        red            & IDENTIFIER \\
+        ,              & COMMA \\
+        blue           & IDENTIFIER \\
+        ,              & COMMA \\
+        green          & IDENTIFIER \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \subsection{Parser Module}
 The parser module converts the token sequence into an abstract syntax tree (AST).
@@ -58,8 +80,8 @@ This section provides information about the license of the Psi CLI language.
 The authors would like to thank...
 
 \section*{References}
-[1] Reference 1
+ [1] Reference 1
 
-[2] Reference 2
+    [2] Reference 2
 
 \end{document}
