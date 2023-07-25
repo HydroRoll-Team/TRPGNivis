@@ -112,6 +112,6 @@ plugins:
   - search
   - git-authors
   # - git-revision-date-localized
-  # - git-committers:
-  #     repository: HydroRoll-Team/psi
-  #     branch: main
+  - git-committers:
+      repository: HydroRoll-Team/psi
+      branch: main

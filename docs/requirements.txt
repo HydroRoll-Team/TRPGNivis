@@ -1,5 +1,5 @@
 mkdocs-material
 mkdocs-blog-plugin
 mkdocs-git-revision-date-localized-plugin
-mkdocs-git-committers
+mkdocs-git-committers-2
 mkdocs-git-authors-plugin
