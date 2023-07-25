@@ -1,8 +1,11 @@
 site_name: Psi Docs (Draft)
 repo_url: https://github.com/HydroRoll-Team/psi
 repo_name: HydroRoll-Team/psi
-edit_uri: edit/main/docs/
-
+edit_uri: edit/main/docs/docs/
+site_author: Hsiang Nianian
+site_description: >-
+  Psi is a new programming language designed with simplicity, flexibility, and performance in mind.
+  It provides a clean and intuitive syntax that is easy to read and write, making it an excellent choice for both beginners and experienced programmers.
 
 theme:
   name: material

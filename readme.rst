@@ -82,6 +82,20 @@ How to build docs
     mkdocs serve
 
 
+Documentation
+-------------
+
+Psi documentation is available at `retrofor <https://hydroroll-team.github.io/psi>`_.
+
+You can also view it throw the following links:
+
+    `vercel-1 <https://psi-alpha.vercel.app>`_
+
+    `vercel-2 <https://psi-retrofor.vercel.app>`_
+
+    `gh-pages <https://hydroroll-team.github.io/psi`_
+
+
 License
 -------
 
