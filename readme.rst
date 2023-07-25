@@ -85,7 +85,7 @@ How to build docs
 Documentation
 -------------
 
-Psi documentation is available at `retrofor <https://hydroroll-team.github.io/psi>`_.
+Psi documentation is available at `psi.retrofor <https://psi.retrofor.space>`_.
 
 You can also view it throw the following links:
 
