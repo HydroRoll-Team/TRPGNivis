@@ -60,8 +60,7 @@ def execute_ast(ast, environment):
         elif ast.operator == '>':
             return left > right
     elif isinstance(ast, IfNode):
-        condition = execute_ast(ast.condition, environment)
-        if condition:
+        if condition := execute_ast(ast.condition, environment):
             execute_ast(ast.body, environment)
     elif isinstance(ast, ReplyNode):
         message = ast.message.format(**environment)
