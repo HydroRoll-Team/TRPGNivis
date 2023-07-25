@@ -76,8 +76,10 @@ How to build docs
 ::
 
     git clone https://github.com/HydroRoll-Team/psi.git
-    cd psi/psi/docs
-    sphinx-build -b html . _build/html
+    cd docs
+    pip install -r requirements.txt
+    # mkdocs build
+    mkdocs serve
 
 
 License
