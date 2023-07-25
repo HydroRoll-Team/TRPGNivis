@@ -89,11 +89,11 @@ Psi documentation is available at `retrofor <https://hydroroll-team.github.io/ps
 
 You can also view it throw the following links:
 
-    `vercel-1 <https://psi-alpha.vercel.app>`_
+    `vercel-1 psi-alpha <https://psi-alpha.vercel.app>`_
 
-    `vercel-2 <https://psi-retrofor.vercel.app>`_
+    `vercel-2 psi-retrofor <https://psi-retrofor.vercel.app>`_
 
-    `gh-pages <https://hydroroll-team.github.io/psi`_
+    `gh-pages from HydroRoll-Team <https://hydroroll-team.github.io/psi>`_
 
 
 License
