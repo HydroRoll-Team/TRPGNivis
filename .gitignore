@@ -9,3 +9,9 @@ src/main.fdb_latexmk
 src/main.fls
 src/main.log
 src/main.synctex.gz
+
+# LangTrans
+LangTrans-main/
+
+# mkdocs
+docs/site/
