@@ -111,7 +111,9 @@ plugins:
   - blog
   - search
   - git-authors
-  # - git-revision-date-localized
-  - git-committers:
-      repository: HydroRoll-Team/psi
-      branch: main
+  - git-revision-date-localized:
+        enable_creation_date: true
+        fallback_to_build_date: true
+  # - git-committers:
+  #     repository: HydroRoll-Team/psi
+  #     branch: main
