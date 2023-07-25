@@ -1,3 +1,11 @@
+---
+hide:
+ - path
+ - navigation
+---
+
+
+
 Psi CLI 语言
 ========================
 
@@ -23,6 +31,9 @@ Features
 
 - `Documentation Module`_: This module uses reStructuredText and Sphinx to build the documentation, providing API interface descriptions and usage examples.
 
+<!-- <object data="/res/main.pdf" type="application/pdf" style="width: 40%; height: 200px">
+    <embed src="/res/main.pdf" type="application/pdf" style="width: 40%; height: 40%;"/>
+</object> -->
 
 Getting Started
 ---------------
