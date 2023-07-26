@@ -71,8 +71,24 @@ Psi 是一门新的编程语言，在设计时考虑了简单性、灵活性和�
 ::
 
     git clone https://github.com/HydroRoll-Team/psi.git
-    cd psi/psi/docs
-    sphinx-build -b html . _build/html
+    cd docs
+    pip install -r requirements.txt
+    # mkdocs build
+    mkdocs serve
+
+
+Documentation
+-------------
+
+Psi 文档可在 `psi.retrofor <https://psi.retrofor.space>`_ 上找到。
+
+你还可以通过以下链接查看它：
+
+    `vercel-1 psi-alpha <https://psi-alpha.vercel.app>`_
+
+    `vercel-2 psi-retrofor <https://psi-retrofor.vercel.app>`_
+
+    `gh-pages from HydroRoll-Team <https://hydroroll-team.github.io/psi>`_
 
 
 许可证
