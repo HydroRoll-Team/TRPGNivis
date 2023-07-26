@@ -76,8 +76,24 @@ How to build docs
 ::
 
     git clone https://github.com/HydroRoll-Team/psi.git
-    cd psi/psi/docs
-    sphinx-build -b html . _build/html
+    cd docs
+    pip install -r requirements.txt
+    # mkdocs build
+    mkdocs serve
+
+
+Documentation
+-------------
+
+Psi documentation is available at `psi.retrofor <https://psi.retrofor.space>`_.
+
+You can also view it throw the following links:
+
+    `vercel-1 psi-alpha <https://psi-alpha.vercel.app>`_
+
+    `vercel-2 psi-retrofor <https://psi-retrofor.vercel.app>`_
+
+    `gh-pages from HydroRoll-Team <https://hydroroll-team.github.io/psi>`_
 
 
 License
