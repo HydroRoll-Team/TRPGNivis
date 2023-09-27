@@ -56,22 +56,97 @@ print([t['type'] for t in lexer])
 __all__ = ['Token', 'Lexer']
 
 class Token(dict):
+    """
+    A class representing a token in the lexer.
+
+    Args:
+        type: The type of the token.
+        value: The value of the token.
+        position: The position of the token.
+
+    Returns:
+        None
+
+    Example:
+        ```python
+        token = Token("identifier", "x", (1, 5))
+        ```
+    """
+
     def __init__(self, type, value, position):
+        """
+        Initializes a Token object.
+
+        Args:
+            type: The type of the token.
+            value: The value of the token.
+            position: The position of the token.
+
+        Returns:
+            None
+        """
         super().__init__(type=type, value=value, position=position)
 
     def __getattr__(self, name):
+        """
+        Retrieves the value of an attribute from the Token object.
+
+        Args:
+            name: The name of the attribute.
+
+        Returns:
+            The value of the attribute.
+
+        Raises:
+            AttributeError: Raised when the attribute does not exist.
+        """
         try:
             return self[name]
         except KeyError:
             raise AttributeError(f"'Token' object has no attribute '{name}'")
 
+
 class Lexer:
+    """
+    A class representing a lexer for Psi code.
+
+    Args:
+        input: The input code to be lexed.
+
+    Returns:
+        None
+
+    Example:
+        ```python
+        lexer = Lexer("x = 10")
+        for token in lexer:
+            print(token)
+        ```
+    """
     def __init__(self, input):
+        """
+        Initializes a Lexer object.
+
+        Args:
+            input: The input code to be lexed.
+
+        Returns:
+            None
+        """
         self.input = input
         self.position = 0
         self.tokens = []
 
     def get_next_token(self):
+        """
+        Retrieves the next token from the input code.
+
+        Returns:
+            The next token.
+
+        Raises:
+            Exception: Raised when an unknown character is encountered.
+        """
         while self.position < len(self.input):
             current_char = self.input[self.position]
 
@@ -144,10 +219,31 @@ class Lexer:
         return token
 
     def __iter__(self):
+        """
+        Returns an iterator over the tokens.
+
+        Returns:
+            An iterator over the tokens.
+        """
         return iter(self.tokens)
 
     def __getitem__(self, index):
+        """
+        Retrieves the token at the specified index.
+
+        Args:
+            index: The index of the token.
+
+        Returns:
+            The token at the specified index.
+        """
         return self.tokens[index]
 
     def __len__(self):
+        """
+        Returns the number of tokens.
+
+        Returns:
+            The number of tokens.
+        """
         return len(self.tokens)

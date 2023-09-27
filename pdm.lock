@@ -6,7 +6,7 @@ groups = ["default"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:b4a772bba741f312f87ccfb7b833351aa83cbf6b23e9cd1f84463059c9b0447d"
+content_hash = "sha256:b629d4cd8e8585cf1128e9dd7f1a585746bc3e94bb588794250bf99dd80d00b3"
 
 [[package]]
 name = "anyio"
@@ -137,6 +137,16 @@ summary = "Cross-platform colored terminal text."
 files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
+]
+
+[[package]]
+name = "docutils"
+version = "0.20.1"
+requires_python = ">=3.7"
+summary = "Docutils -- Python Documentation Utilities"
+files = [
+    {file = "docutils-0.20.1-py3-none-any.whl", hash = "sha256:96f387a2c5562db4476f09f13bbab2192e764cac08ebbf3a34a95d9b1e4a59d6"},
+    {file = "docutils-0.20.1.tar.gz", hash = "sha256:f08a4e276c3a1583a86dce3e34aba3fe04d02bba2dd51ed16106244e8a923e3b"},
 ]
 
 [[package]]

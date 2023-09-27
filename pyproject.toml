@@ -12,6 +12,7 @@ dependencies = [
     "mkdocs-git-authors-plugin>=0.7.2",
     "mkdocs-material-extensions>=1.2",
     "neoteroi-mkdocs>=1.0.4",
+    "docutils>=0.20.1",
 ]
 requires-python = ">=3.8"
 readme = "README.md"

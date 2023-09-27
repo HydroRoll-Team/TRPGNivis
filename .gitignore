@@ -17,6 +17,7 @@ LangTrans/
 docs/site/
 
 # pdm
+.pdm-python
 .pdm-build/
 .venv/
 1.1
