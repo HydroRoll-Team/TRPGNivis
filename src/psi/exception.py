@@ -22,3 +22,15 @@ class ValueError(PsiException):
         raise ValueError("Invalid value encountered in the Psi code.")
         ```
     """
+
+class GrammarError(PsiException):
+    """
+    An exception class for grammar-related errors in Psi code.
+
+    This class inherits from the `PsiException` class.
+
+    Example:
+        ```python
+        raise GrammarError("Invalid grammar encountered in the Psi code.")
+        ```
+    """
