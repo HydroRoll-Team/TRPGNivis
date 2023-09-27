@@ -7,7 +7,7 @@ __all__ = ['psi']
 
 from psi.execution import Execution
 
-class Psi:
+class psi:
     """
     A class representing a Psi object.
 
