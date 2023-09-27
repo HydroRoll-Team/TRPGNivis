@@ -1,11 +1,3 @@
-ENDMARKER
-NAME
-NUMBER
-STRING
-NEWLINE
-INDENT
-DEDENT
-
 LPAR                    '('
 RPAR                    ')'
 LSQB                    '['
@@ -54,19 +46,5 @@ RARROW                  '->'
 ELLIPSIS                '...'
 COLONEQUAL              ':='
 EXCLAMATION             '!'
-
-OP
-AWAIT
-ASYNC
-TYPE_IGNORE
-TYPE_COMMENT
-SOFT_KEYWORD
-FSTRING_START
-FSTRING_MIDDLE
-FSTRING_END
-COMMENT
-NL
-ERRORTOKEN
-
-# These aren't used by the C tokenizer but are needed for tokenize.py
-ENCODING
+INTEGER                 'INTEGER'
+EOF                     'EOF'
