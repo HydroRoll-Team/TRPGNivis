@@ -52,6 +52,7 @@ while token['type'] != 'EOF':
 print("\nAll tokens:")
 print([t['type'] for t in lexer])
 """
+from psi.exception import ValueError
 
 __all__ = ['Token', 'Lexer']
 
@@ -102,8 +103,8 @@ class Token(dict):
         """
         try:
             return self[name]
-        except KeyError:
-            raise AttributeError(f"'Token' object has no attribute '{name}'")
+        except KeyError as e:
+            raise AttributeError(f"'Token' object has no attribute '{name}'") from e
 
 
 class Lexer:
@@ -200,21 +201,20 @@ class Lexer:
                 return token
 
             if current_char in {'{', '}', '(', ')', '[', ']', ';', ',', '.', ':'}:
-                token = Token('SEPARATOR', current_char, self.position)
-                self.position += 1
-                self.tokens.append(token)
-                return token
-
+                return self._extracted_from_get_next_token_64('SEPARATOR', current_char)
             if current_char in {'?', '!', '|'}:
-                token = Token('CONTROL', current_char, self.position)
-                self.position += 1
-                self.tokens.append(token)
-                return token
-
+                return self._extracted_from_get_next_token_64('CONTROL', current_char)
             self.position += 1
-            raise Exception(f'Unknown character: {current_char}')
+            raise ValueError(f'Unknown character: {current_char}')
 
         token = Token('EOF', None, self.position)
+        self.tokens.append(token)
+        return token
+
+    # TODO Rename this here and in `get_next_token`
+    def _extracted_from_get_next_token_64(self, arg0, current_char):
+        token = Token(arg0, current_char, self.position)
+        self.position += 1
         self.tokens.append(token)
         return token
 
