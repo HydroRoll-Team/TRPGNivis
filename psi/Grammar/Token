@@ -48,3 +48,8 @@ COLONEQUAL              ':='
 EXCLAMATION             '!'
 INTEGER                 'INTEGER'
 EOF                     'EOF'
+SPACE                   ' '
+
+
+AWAIT
+ASYNC
