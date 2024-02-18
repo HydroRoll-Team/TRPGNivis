@@ -1,6 +1,8 @@
 Psi CLI Language
 ========================
 
+ Python Implementation of Psi.
+
 Psi is a new programming language designed with simplicity, flexibility, and performance in mind. It provides a clean and intuitive syntax that is easy to read and write, making it an excellent choice for both beginners and experienced programmers.
 
 
