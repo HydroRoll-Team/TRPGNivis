@@ -1,7 +1,8 @@
 from psi.parsers import Parser
 from psi.interpreter import Interpreter
 
-__all__ = ['Execution']
+__all__ = ["Execution"]
+
 
 class Execution:
     """

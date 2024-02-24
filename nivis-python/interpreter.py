@@ -1,7 +1,8 @@
 from psi.lexer import Token
 
 
-__all__ = ['Interpreter']
+__all__ = ["Interpreter"]
+
 
 class Interpreter:
     """

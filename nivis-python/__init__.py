@@ -3,7 +3,7 @@
 @BODY 似乎要写的还蛮多的，所以先写几个TODO List
 """
 
-__all__ = ['psi', 'Exception', 'interpreter', 'lexer', 'Parser']
+__all__ = ["psi", "Exception", "interpreter", "lexer", "Parser"]
 
 from .psi import psi
 from .execution import Execution

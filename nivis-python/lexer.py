@@ -54,7 +54,8 @@ print([t['type'] for t in lexer])
 """
 from psi.exception import ValueError
 
-__all__ = ['Token', 'Lexer']
+__all__ = ["Token", "Lexer"]
+
 
 class Token(dict):
     """
@@ -124,6 +125,7 @@ class Lexer:
             print(token)
         ```
     """
+
     def __init__(self, input):
         """
         Initializes a Lexer object.
@@ -155,17 +157,25 @@ class Lexer:
                 self.position += 1
                 continue
 
-            if current_char == '#':
+            if current_char == "#":
                 self.position += 1
-                while (self.position < len(self.input) and
-                       self.input[self.position] != '\n'):
+                while (
+                    self.position < len(self.input)
+                    and self.input[self.position] != "\n"
+                ):
                     self.position += 1
                 continue
 
-            if current_char == '/' and self.position + 1 < len(self.input) and self.input[self.position + 1] == '*':
+            if (
+                current_char == "/"
+                and self.position + 1 < len(self.input)
+                and self.input[self.position + 1] == "*"
+            ):
                 self.position += 2
-                while (self.position < len(self.input) - 1 and
-                       (self.input[self.position] != '*' or self.input[self.position + 1] != '/')):
+                while self.position < len(self.input) - 1 and (
+                    self.input[self.position] != "*"
+                    or self.input[self.position + 1] != "/"
+                ):
                     self.position += 1
                 if self.position < len(self.input) - 1:
                     self.position += 2
@@ -173,41 +183,58 @@ class Lexer:
 
             if current_char.isalpha():
                 start_position = self.position
-                while (self.position < len(self.input) and
-                       self.input[self.position].isalnum()):
+                while (
+                    self.position < len(self.input)
+                    and self.input[self.position].isalnum()
+                ):
                     self.position += 1
-                token = Token('IDENTIFIER', self.input[start_position:self.position], start_position)
+                token = Token(
+                    "IDENTIFIER",
+                    self.input[start_position : self.position],
+                    start_position,
+                )
                 self.tokens.append(token)
                 return token
 
             if current_char.isdigit():
                 start_position = self.position
-                while (self.position < len(self.input) and
-                       self.input[self.position].isdigit()):
+                while (
+                    self.position < len(self.input)
+                    and self.input[self.position].isdigit()
+                ):
                     self.position += 1
-                token = Token('INTEGER', int(self.input[start_position:self.position]), start_position)
+                token = Token(
+                    "INTEGER",
+                    int(self.input[start_position : self.position]),
+                    start_position,
+                )
                 self.tokens.append(token)
                 return token
 
-            if current_char in {'<', '>', '=', '!', '&', '|', '@'}:
-                if (self.position + 1 < len(self.input) and
-                    self.input[self.position + 1] in {'=', '&', '|'}):
-                    token = Token('OPERATOR', current_char + self.input[self.position + 1], self.position)
+            if current_char in {"<", ">", "=", "!", "&", "|", "@"}:
+                if self.position + 1 < len(self.input) and self.input[
+                    self.position + 1
+                ] in {"=", "&", "|"}:
+                    token = Token(
+                        "OPERATOR",
+                        current_char + self.input[self.position + 1],
+                        self.position,
+                    )
                     self.position += 2
                 else:
-                    token = Token('OPERATOR', current_char, self.position)
+                    token = Token("OPERATOR", current_char, self.position)
                     self.position += 1
                 self.tokens.append(token)
                 return token
 
-            if current_char in {'{', '}', '(', ')', '[', ']', ';', ',', '.', ':'}:
-                return self._extracted_from_get_next_token_64('SEPARATOR', current_char)
-            if current_char in {'?', '!', '|'}:
-                return self._extracted_from_get_next_token_64('CONTROL', current_char)
+            if current_char in {"{", "}", "(", ")", "[", "]", ";", ",", ".", ":"}:
+                return self._extracted_from_get_next_token_64("SEPARATOR", current_char)
+            if current_char in {"?", "!", "|"}:
+                return self._extracted_from_get_next_token_64("CONTROL", current_char)
             self.position += 1
-            raise ValueError(f'Unknown character: {current_char}')
+            raise ValueError(f"Unknown character: {current_char}")
 
-        token = Token('EOF', None, self.position)
+        token = Token("EOF", None, self.position)
         self.tokens.append(token)
         return token
 

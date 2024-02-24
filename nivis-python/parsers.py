@@ -1,7 +1,8 @@
 from psi.lexer import Lexer, Token
 
 
-__all__ = ['Parser']
+__all__ = ["Parser"]
+
 
 class Parser:
     """
@@ -51,12 +52,12 @@ class Parser:
             The result of the parsing.
         """
         token = self.current_token
-        if token.value == '?':
-            self.eat('?')
+        if token.value == "?":
+            self.eat("?")
 
             condition = self.parse_condition()
 
-            self.eat(':')
+            self.eat(":")
 
             if condition:
                 result = self.parse_reply()
@@ -73,7 +74,7 @@ class Parser:
             The result of the parsing.
         """
         variable = self.parse_variable()
-        self.eat('==')
+        self.eat("==")
         value = self.parse_value()
 
         return variable == value
@@ -86,7 +87,7 @@ class Parser:
             The result of the parsing.
         """
         token = self.current_token
-        self.eat('IDENTIFIER')
+        self.eat("IDENTIFIER")
         return token.value
 
     def parse_value(self):
@@ -100,11 +101,11 @@ class Parser:
             Exception: Raised when an invalid value is encountered.
         """
         token = self.current_token
-        if token.type == 'INTEGER':
-            self.eat('INTEGER')
+        if token.type == "INTEGER":
+            self.eat("INTEGER")
             return token.value
         else:
-            raise Exception(f'Invalid value: {token.value}')
+            raise Exception(f"Invalid value: {token.value}")
 
     def parse_reply(self):
         """
@@ -116,12 +117,12 @@ class Parser:
         Raises:
             Exception: Raised when an invalid reply is encountered.
         """
-        self.eat('reply')
-        self.eat(':')
+        self.eat("reply")
+        self.eat(":")
 
         token = self.current_token
-        if token.type != 'SEPARATOR':
-            raise Exception(f'Invalid reply: {token.value}')
+        if token.type != "SEPARATOR":
+            raise Exception(f"Invalid reply: {token.value}")
 
         return token.value
 
@@ -141,4 +142,4 @@ class Parser:
         if self.current_token.type == expected_type:
             self.current_token = next(self.tokens)
         else:
-            raise Exception(f'Unexpected token: {self.current_token.value}')
+            raise Exception(f"Unexpected token: {self.current_token.value}")

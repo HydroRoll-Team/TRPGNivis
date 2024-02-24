@@ -10,7 +10,7 @@ class PsiException(Exception):
         ```
     """
 
-    
+
 class ValueError(PsiException):
     """
     An exception class for value-related errors in Psi code.
@@ -22,6 +22,7 @@ class ValueError(PsiException):
         raise ValueError("Invalid value encountered in the Psi code.")
         ```
     """
+
 
 class GrammarError(PsiException):
     """
