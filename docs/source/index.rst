@@ -11,13 +11,13 @@ Nivis - ❄
 .. toctree::
     :hidden:
 
-    Quick start<quick-start.rst>
+    Quick start <pages/quick-start.rst>
 
 
 .. toctree::
     :caption: Development
     :hidden:
 
-    Contributing <pages/development/contributing.rst>
-    Changelog <changelog.rst>
+    CONTRIBUTING <pages/development/contributing.rst>
+    CHANGELOG <changelog.rst>
     COPYING <COPYING.rst>
