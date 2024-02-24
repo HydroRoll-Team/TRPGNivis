@@ -3,7 +3,6 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import infini
 import os, sys
 
 if sys.version_info >= (3, 11):
@@ -26,10 +25,10 @@ AUTHORS = ",".join([f"{aut['name']}" for aut in AUTHOR_TABLE])
 
 project = PROJECT_NAME  # "Infini"
 release = PROJECT_VERSION  # "latest"
-copyright = "2023-PRESENT, HydroRoll-Team & 浊莲."
+copyright = "2023-PRESENT, HydroRoll-Team & AICMUniversity."
 author = AUTHORS  # "Hsiang Nianian"
 
-html_title = "INFINI GENERATOR II"
+html_title = "Nivis ❄"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -47,8 +46,8 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 extlinks = {
-    "issue": ("https://github.com/HydroRoll-Team/infini/%s", "issue %s"),
-    "doc": ("https://grps.hydroroll.team/zh_CN/latest/%s", "pages/%s"),
+    "issue": ("https://github.com/HydroRoll-Team/nivis-python/%s", "issue %s"),
+    "doc": ("https://nivis.hydroroll.team/en/latest/%s", "pages/%s"),
 }
 source_suffix = {
     ".rst": "restructuredtext",
@@ -66,7 +65,7 @@ gettext_uuid = True  # optional.
 html_theme = "furo"
 html_static_path = ["../_static"]
 _html_logo = (
-    "https://cdn.jsdelivr.net/gh/HydroRoll-Team/infini@master/docs/_static/logo.png"
+    "https://cdn.jsdelivr.net/gh/HydroRoll-Team/nivis-python@main/docs/_static/logo.png"
 )
 html_favicon = _html_logo
 
@@ -76,20 +75,20 @@ html_css_files = [
 ]
 
 html_theme_options = {
-    # "announcement": "<em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
-    "source_repository": "https://github.com/HydroRoll-Team/infini/",
-    "source_branch": "master",
+    "announcement": "<em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
+    "source_repository": "https://github.com/HydroRoll-Team/nivis-python/",
+    "source_branch": "main",
     "source_directory": "docs/source/",
     "footer_icons": [
         {
             "name": "GitHub",
-            "url": "https://github.com/HydroRoll-Team/infini/",
+            "url": "https://github.com/HydroRoll-Team/nivis-python/",
             "html": "",
             "class": "fa-brands fa-github",
         },
         {
             "name": "Pypi",
-            "url": "https://pypi.org/project/infini/",
+            "url": "https://pypi.org/project/nivis-python/",
             "html": "",
             "class": "fa-brands fa-python",
         },
