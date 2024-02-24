@@ -20,7 +20,6 @@ docs/site/
 .pdm-python
 .pdm-build/
 .venv/
-1.1
 
 # vscode
 .vscode/

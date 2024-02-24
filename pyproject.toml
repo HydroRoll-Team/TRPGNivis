@@ -1,24 +1,28 @@
 [project]
-name = "psi"
+name = "nivis-python"
 version = "0.1.0"
-description = "An embedded cli language | Psi reply"
+description = "Python implementation for Nivis."
 authors = [
     {name = "简律纯", email = "i@jyunko.cn"},
 ]
 dependencies = [
-    "mkdocs-material>=9.4.2",
-    "mkdocs-blog-plugin>=0.25",
-    "mkdocs-git-revision-date-localized-plugin>=1.2.0",
-    "mkdocs-git-authors-plugin>=0.7.2",
-    "mkdocs-material-extensions>=1.2",
-    "neoteroi-mkdocs>=1.0.4",
-    "docutils>=0.20.1",
-    "pytest>=7.4.2",
+    "infini>=2.0.4",
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
 
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "furo>=2024.1.29",
+    "sphinx-autobuild>=2024.2.4",
+    "myst-parser>=2.0.0",
+    "sphinx>=7.2.6",
+    "tomli>=2.0.1",
+    "sphinx-design>=0.5.0",
+    "sphinx-intl>=2.1.0",
+]
