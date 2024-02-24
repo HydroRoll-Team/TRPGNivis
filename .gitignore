@@ -20,7 +20,7 @@ docs/site/
 .pdm-python
 .pdm-build/
 .venv/
+dist/**
 
 # vscode
 .vscode/
-
