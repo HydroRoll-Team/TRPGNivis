@@ -1,6 +1,6 @@
 [project]
 name = "nivis-python"
-version = "0.1.0"
+version = "0.1.1a1"
 description = "Python implementation for Nivis."
 authors = [{ name = "简律纯", email = "i@jyunko.cn" }]
 dependencies = ["ply>=3.11"]
