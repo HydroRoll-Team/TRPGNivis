@@ -20,10 +20,10 @@ docs/site/
 .pdm-python
 .pdm-build/
 .venv/
-dist/**
+dist/
 
 # vscode
 .vscode/
 
 # ruff
-.ruff_cache
+.ruff_cache/
