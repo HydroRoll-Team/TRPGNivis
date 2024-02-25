@@ -1,5 +1,5 @@
 [project]
-name = "nivis-python"
+name = "nivis"
 version = "0.1.1a1"
 description = "Python implementation for Nivis."
 authors = [{ name = "简律纯", email = "i@jyunko.cn" }]
@@ -85,6 +85,9 @@ skip-magic-trailing-comma = false
 # Like Black, automatically detect the appropriate line ending.
 line-ending = "auto"
 
+[tool.hatch.build.targets.sdist]
+include = ["/README.rst", "/nivis"]
+
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
