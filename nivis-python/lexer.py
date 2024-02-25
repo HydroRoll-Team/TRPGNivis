@@ -52,7 +52,7 @@ while token['type'] != 'EOF':
 print("\nAll tokens:")
 print([t['type'] for t in lexer])
 """
-from psi.exception import ValueError
+from .exception import ValueError
 
 __all__ = ["Token", "Lexer"]
 

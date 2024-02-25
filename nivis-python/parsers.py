@@ -1,4 +1,4 @@
-from psi.lexer import Lexer, Token
+from .lexer import Lexer, Token
 
 
 __all__ = ["Parser"]

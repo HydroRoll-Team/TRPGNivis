@@ -1,5 +1,5 @@
-from psi.parsers import Parser
-from psi.interpreter import Interpreter
+from .parsers import Parser
+from .interpreter import Interpreter
 
 __all__ = ["Execution"]
 
