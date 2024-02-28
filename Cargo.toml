@@ -1,6 +1,6 @@
 [package]
 name = "nivis-python"
-version = "0.1.8"
+version = "0.0.2-alpha.1"
 edition = "2021"
 description = "A simple rust library for HydroRoll."
 license = "MIT"
