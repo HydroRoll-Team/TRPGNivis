@@ -27,3 +27,6 @@ dist/
 
 # ruff
 .ruff_cache/
+
+# rust
+target/
