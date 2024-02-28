@@ -2,6 +2,8 @@ readme.md
 
 # python
 __pycache__
+*.whl
+*.pyd
 
 # LaTeX
 *.aux
@@ -30,3 +32,4 @@ dist/
 
 # rust
 target/
+

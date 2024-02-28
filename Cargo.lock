@@ -53,7 +53,7 @@ dependencies = [
 
 [[package]]
 name = "nivis-python"
-version = "0.1.8"
+version = "0.0.2-alpha.1"
 dependencies = [
  "pyo3",
 ]
