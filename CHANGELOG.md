@@ -4,6 +4,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.0.2-alpha.1] - 2024-02-28
+### BREAKING CHANGES
+- due to [`3f15d38`](https://github.com/HydroRoll-Team/nivis-python/commit/3f15d3828a3403bb3fe59bd8d2d82db45c02f90b) - sync package name *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
+
+  sync package name
+
+- due to [`672e0d0`](https://github.com/HydroRoll-Team/nivis-python/commit/672e0d03d3ffdba740d166f2c4a7243f142cec5f) - built in rust *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
+
+  built in rust
+
+- due to [`8793ece`](https://github.com/HydroRoll-Team/nivis-python/commit/8793ecea74706aedb4674434f65ef9d05850b769) - rename nivis-python -> nivis_python *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
+
+  rename nivis-python -> nivis_python
+
+
+### Bug Fixes
+- [`ab026b7`](https://github.com/HydroRoll-Team/nivis-python/commit/ab026b7e0ba3baa1ffab7603e7f5fa47864427f7) - **bones**: delete target directory and add it into the gitignore list *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+### Refactors
+- [`3f15d38`](https://github.com/HydroRoll-Team/nivis-python/commit/3f15d3828a3403bb3fe59bd8d2d82db45c02f90b) - sync package name *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`e2c1c19`](https://github.com/HydroRoll-Team/nivis-python/commit/e2c1c1911e117245551a612499d02eacabbbe5d8) - rename nivis-python to nivis *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`672e0d0`](https://github.com/HydroRoll-Team/nivis-python/commit/672e0d03d3ffdba740d166f2c4a7243f142cec5f) - built in rust *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`8793ece`](https://github.com/HydroRoll-Team/nivis-python/commit/8793ecea74706aedb4674434f65ef9d05850b769) - **bones**: rename nivis-python -> nivis_python *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+### Chores
+- [`046acf6`](https://github.com/HydroRoll-Team/nivis-python/commit/046acf6764606b590a885ce59ab32ea89974c125) - **docs**: update conf.py *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`1199a75`](https://github.com/HydroRoll-Team/nivis-python/commit/1199a75378efcaf756e2027ecc2530c6d97bc95c) - add .ruff_cache dir into the gitignore *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`89f753a`](https://github.com/HydroRoll-Team/nivis-python/commit/89f753a58bf2646c386096b23b9d629bb9c687b2) - **tests**: delete useless files *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`d35d3cb`](https://github.com/HydroRoll-Team/nivis-python/commit/d35d3cbe89168bf581b6f95364bbe3f66b3297d4) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`fc6fc64`](https://github.com/HydroRoll-Team/nivis-python/commit/fc6fc64ca3ff7df62dd270fc021f674e56b2dedf) - **project**: change package name & build-system *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`45ded34`](https://github.com/HydroRoll-Team/nivis-python/commit/45ded34e5906b3c978e70db8339eba6f6a362bd2) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`bce4a25`](https://github.com/HydroRoll-Team/nivis-python/commit/bce4a25fdbd383ef846d9eff8d11ef655fa4196b) - **project**: bump version to 0.0.2-alpha.1 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.1.1a1] - 2024-02-24
 ### BREAKING CHANGES
 - due to [`ae345a2`](https://github.com/HydroRoll-Team/nivis-python/commit/ae345a2f193a4d6022edda76523a39f6e891843e) - rewrite python package *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
@@ -36,3 +70,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [v0.1.1a1]: https://github.com/HydroRoll-Team/nivis-python/compare/v0.0.1-alpha...v0.1.1a1
+[v0.0.2-alpha.1]: https://github.com/HydroRoll-Team/nivis-python/compare/v0.1.1a1...v0.0.2-alpha.1
