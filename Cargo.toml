@@ -15,4 +15,4 @@ name = "nivis_python"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.19.2", features = ["abi3"] }
+pyo3 = { version = "0.19.2", features = ["abi3-py39"] }
