@@ -6,7 +6,7 @@ groups = ["default", "docs", "lint"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:29b63ff483b818541b61b1dabd6f9220b0a920a8e6186396fe6b9d98d9113716"
+content_hash = "sha256:939352e82b2ab816661338e90f435d6dce36939704575290fdd85af668683fd1"
 
 [[package]]
 name = "alabaster"
@@ -280,6 +280,16 @@ files = [
 ]
 
 [[package]]
+name = "pip"
+version = "24.0"
+requires_python = ">=3.7"
+summary = "The PyPA recommended tool for installing Python packages."
+files = [
+    {file = "pip-24.0-py3-none-any.whl", hash = "sha256:ba0d021a166865d2265246961bec0152ff124de910c5cc39f1156ce3fa7c69dc"},
+    {file = "pip-24.0.tar.gz", hash = "sha256:ea9bd1a847e8c5774a5777bb398c19e80bcd4e2aa16a4b301b718fe6f593aba2"},
+]
+
+[[package]]
 name = "ply"
 version = "3.11"
 summary = "Python Lex & Yacc"
@@ -297,6 +307,12 @@ files = [
     {file = "pygments-2.17.2-py3-none-any.whl", hash = "sha256:b27c2826c47d0f3219f29554824c30c5e8945175d888647acd804ddd04af846c"},
     {file = "pygments-2.17.2.tar.gz", hash = "sha256:da46cec9fd2de5be3a8a784f434e4c4ab670b4ff54d605c4c2717e9d49c4c367"},
 ]
+
+[[package]]
+name = "pyo3-example"
+version = "0.1.0"
+requires_python = ">=3.7"
+summary = ""
 
 [[package]]
 name = "pyyaml"

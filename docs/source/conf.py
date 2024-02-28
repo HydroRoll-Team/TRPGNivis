@@ -11,14 +11,14 @@ else:
     import tomli as tomllib
 
 DATA = None
-PYPROJECT = os.path.join("..", "..", "pyproject.toml")
+PYPROJECT = os.path.join("..", "..", "Cargo.toml")
 with open(PYPROJECT, "r", encoding="utf8") as f:
     pyproject = f.read()
     DATA = tomllib.loads(pyproject)
-PROJECT_VERSION = DATA["project"]["version"]
-PROJECT_NAME = DATA["project"]["name"]
-AUTHOR_TABLE = DATA["project"]["authors"]
-AUTHORS = ",".join([f"{aut['name']}" for aut in AUTHOR_TABLE])
+PROJECT_VERSION = DATA["package"]["version"]
+PROJECT_NAME = DATA["package"]["name"]
+AUTHOR_TABLE = DATA["package"]["authors"]
+AUTHORS = ",".join([f"{aut}" for aut in AUTHOR_TABLE])
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information

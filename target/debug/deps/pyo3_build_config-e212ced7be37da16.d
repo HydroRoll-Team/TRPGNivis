@@ -1,0 +1,13 @@
+D:\GitProject\HydroRoll-Team\nivis-python\target\debug\deps\libpyo3_build_config-e212ced7be37da16.rmeta: C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\lib.rs C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\errors.rs C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\impl_.rs D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config-file.txt D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config.txt
+
+D:\GitProject\HydroRoll-Team\nivis-python\target\debug\deps\libpyo3_build_config-e212ced7be37da16.rlib: C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\lib.rs C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\errors.rs C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\impl_.rs D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config-file.txt D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config.txt
+
+D:\GitProject\HydroRoll-Team\nivis-python\target\debug\deps\pyo3_build_config-e212ced7be37da16.d: C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\lib.rs C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\errors.rs C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\impl_.rs D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config-file.txt D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config.txt
+
+C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\lib.rs:
+C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\errors.rs:
+C:\Users\admin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pyo3-build-config-0.19.2\src\impl_.rs:
+D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config-file.txt:
+D:\GitProject\HydroRoll-Team\nivis-python\target\debug\build\pyo3-build-config-0d1408f1fb7e60c8\out/pyo3-build-config.txt:
+
+# env-dep:OUT_DIR=D:\\GitProject\\HydroRoll-Team\\nivis-python\\target\\debug\\build\\pyo3-build-config-0d1408f1fb7e60c8\\out

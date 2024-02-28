@@ -1,12 +1,25 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
 [project]
-name = "nivis"
-version = "0.1.1a1"
+name = "nivis-python"
+dynamic = ["version"]
 description = "Python implementation for Nivis."
 authors = [{ name = "简律纯", email = "i@jyunko.cn" }]
-dependencies = ["ply>=3.11"]
+dependencies = [
+    "ply>=3.11",
+    "pip>=24.0",
+]
 requires-python = ">=3.11"
 readme = "README.rst"
 license = { text = "MIT" }
+
+[project.urls]
+homepage = "https://xn--tdi.hydroroll.team/"
+repository = "https://github.com/HydroRoll-Team/nivis-python"
+documentation = "https://nivis.hydroroll.team/"
+
 
 [tool.pdm.dev-dependencies]
 docs = [
@@ -84,10 +97,3 @@ skip-magic-trailing-comma = false
 
 # Like Black, automatically detect the appropriate line ending.
 line-ending = "auto"
-
-[tool.hatch.build.targets.sdist]
-include = ["/README.rst", "/nivis"]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
