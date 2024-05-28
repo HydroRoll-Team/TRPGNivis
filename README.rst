@@ -1,11 +1,11 @@
 |ruff| |docs_status|
 
-Nivis
-=======
+Nivis in TRPG
+=============
 
-    ❄ Lightweight and easy-to-use multi-paradigm interactive scripting language.
+    ❄ Nivis TRPG Module.
 
-Welcome to nivis community!
+Welcome to trpg-nivis community!
 
 
 .. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
